@@ -1,0 +1,41 @@
+{
+  "name": "app2",
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "email": "",
+  "engines": {
+    "npm": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack"
+  },
+  "dependencies": {
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.7",
+    "@babel/preset-react": "7.16.7",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "babel-loader": "8.2.3",
+    "html-webpack-plugin": "5.5.0",
+    "serve": "13.0.2",
+    "webpack": "5.70.0",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.7.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
