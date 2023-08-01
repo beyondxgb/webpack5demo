@@ -12,7 +12,7 @@
     "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
-    "react": "16.14.0",
+    "react": "16.15.0",
     "react-dom": "16.14.0"
   },
   "devDependencies": {
